@@ -1,5 +1,5 @@
 {% set name = "olmocr" %}
-{% set version = "0.1.58" %}
+{% set version = "0.1.60" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/olmocr-{{ version }}.tar.gz
-  sha256: a55a224ed09f9782a31bf4796d096e8fa7d9f6f7727af4246dd6dff678688d5e
+  sha256: 7398482f499a4cc5ce0b3f130c6f7391eac773a8b8f8077bd7085777a74eb393
 
 build:
   noarch: python
@@ -41,7 +41,7 @@ requirements:
     - boto3
     - httpx
     - pytorch >=2.5.1
-    - transformers >=4.46.2
+    - transformers ==4.46.2
     - beaker-py
 
 test:
