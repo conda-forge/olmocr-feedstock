@@ -1,5 +1,5 @@
 {% set name = "olmocr" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/olmocr-{{ version }}.tar.gz
-  sha256: 4cb62db63099d42a937c0bdd8ef59e77de1165c4a6df49c517c0888643894310
+  sha256: dcdaa4be7f42975b6330ed55e0046f21ea893da3e5521d7ece33378c8155241c
 
 build:
   noarch: python
