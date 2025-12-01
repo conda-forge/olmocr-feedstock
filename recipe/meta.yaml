@@ -1,5 +1,5 @@
 {% set name = "olmocr" %}
-{% set version = "0.4.6" %}
+{% set version = "0.4.7" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/olmocr-{{ version }}.tar.gz
-  sha256: 63971fcf20238ffcef7d2f61b9fb423fc809055af25baf45f1391ac0d6d82a60
+  sha256: ac679d1dff810d3050e8347af0259e895f00cfeee53e01bdb47621450e13858d
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - wheel
     - pip
   run:
+    - cached-path
     - markdownify
     - img2pdf
     - pikepdf
@@ -44,7 +45,7 @@ requirements:
     - boto3
     - httpx
     - pytorch >=2.7.0
-    - transformers ==4.55.2
+    - transformers ==4.57.3
     - beaker-py
 
 test:
