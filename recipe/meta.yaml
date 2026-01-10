@@ -22,7 +22,6 @@ requirements:
     - wheel
     - pip
   run:
-    - cached-path
     - markdownify
     - img2pdf
     - pikepdf
